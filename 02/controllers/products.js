@@ -8,7 +8,7 @@ exports.getProducts = (req, res, next) => {
 
 exports.postProduct = (req, res, next) => {
     const title = req.body.title;
-    const content = ewq.body.content;
+    const content = req.body.content;
     
     res.status(201).json( {
         message: "successful",
